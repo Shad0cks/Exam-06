@@ -89,12 +89,8 @@ int main(int argc, char **argv) {
             {
                 int ret_recv = 1;
                 while (ret_recv == 1 && bufRead[strlen(bufRead) - 1] != '\n')
-                {
                     ret_recv = recv(i, bufRead + strlen(bufRead), 1, 0);
-                    if (ret_recv <= 0)
-                        break;
-                }
-
+                   
                 if (ret_recv <= 0)
                 {
                     sprintf(bufWrite, "server: client %d just left\n", fd[i]);

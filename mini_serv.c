@@ -10,7 +10,7 @@
 int max, curr = 0;
 int fd[10000];
 
-char sendMessage[4096*42], bufRead[4096*42], bufWrite[4096*42];
+char sendMessage[4096*42], bufRead[4096*42], bufWrite[4097*42];
 fd_set active, fdRead, fdWrite;
 
 void err()

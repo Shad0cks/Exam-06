@@ -8,7 +8,7 @@
 #include <stdio.h>
 
 int max, curr = 0;
-int fd[1024 * 62];
+int fd[10000];
 
 char sendMessage[4096*42], bufRead[4096*42], bufWrite[4096*42];
 fd_set active, fdRead, fdWrite;
